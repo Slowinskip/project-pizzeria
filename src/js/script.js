@@ -67,6 +67,15 @@
 
       /*generate HTML based on template */
       const generatedHTML = templates.menuProduct(thisProduct.data);
+      
+      // Create element using utils.createElementFromHtml
+      thisProduct.element = utils.createDOMFromHTML(generatedHTML);
+    
+      // Find menu container
+      const menuContainer = document.querySelector(select.containerOf.menu);
+    
+      // add element to menu
+      menuContainer.appendChild(thisProduct.element);
     }
   } 
 
