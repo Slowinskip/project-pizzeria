@@ -43,7 +43,6 @@ class Cart{
       deliveryFee: thisCart.deliveryFee,
       products: [],
     };
-    console.log('payload: ', payload);
 
     for(let prod of thisCart.products) {
       payload.products.push(prod.getData());
@@ -102,7 +101,6 @@ class Cart{
       thisCart.subtotalPrice += product.price;
     
     }
-    console.log('totalNumer: ', thisCart.totalNumber, 'subtotalPrice: ', thisCart.subtotalPrice);
     
     if (thisCart.totalNumber <= 0){
       thisCart.deliveryFee = 0;  
@@ -112,7 +110,6 @@ class Cart{
     
     thisCart.totalPrice = thisCart.deliveryFee + thisCart.subtotalPrice;
     
-    console.log('totalPrice: ', thisCart.totalPrice);
     
     
     thisCart.dom.totalNumber.innerHTML = thisCart.totalNumber;
@@ -127,11 +124,8 @@ class Cart{
     const thisCart = this;
 
     const removeList = thisCart.products;
-    console.log('removeList: ', removeList);
     const index = removeList.indexOf(instance);
-    console.log('index: ', index);
     thisCart.products.splice(index, 1);
-    console.log('index: ', index);
 
     thisCart.update();
   }

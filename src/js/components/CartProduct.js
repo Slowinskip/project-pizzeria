@@ -79,7 +79,6 @@ class CartProduct {
       name: thisCartProduct.name,
       params: thisCartProduct.params,
     };
-    console.log('productOrder: ', productOrder);
     return productOrder;
   }
 }
