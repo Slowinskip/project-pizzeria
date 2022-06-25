@@ -40,7 +40,7 @@
     text-transform: uppercase;
     z-index: 3;
     pointer-events: none;
-    transition: all .3s;       
+    transition: all 3s;       
   }
 
 }
@@ -48,6 +48,7 @@
 .card-body:hover {
   h1 {
     transform: translateY(-20px);
+    transition: all 1s;
   }
 
 }
