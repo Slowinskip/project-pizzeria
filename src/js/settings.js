@@ -118,9 +118,7 @@ export const settings = {
     tableIdAttribute: 'data-table',
   },
   db: {
-    url: '//localhost:3131',
-    products: 'products',
-    orders: 'orders',
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),    orders: 'orders',
     bookings: 'bookings',
     events: 'events',
     dateStartParamKey: 'date_gte',

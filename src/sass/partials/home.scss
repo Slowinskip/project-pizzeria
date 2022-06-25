@@ -1,10 +1,11 @@
 .home-wrapper {
-  margin: ($base-size * 3.5) auto;
-  padding: ($base-size * 6) ($base-size * 4);
-  background: $color-light;
-  border-bottom: 1px solid lighten($color-dark, 70%);
-  border-radius: $radius;
+  margin: 42px auto;
+  padding: 72px 48px;
+  background: #fff;
+  border-bottom: 1px solid lighten(#333, 70%);
+  border-radius: 4px;
 }
+
 
 .card-buttons {
   width: auto;
@@ -12,8 +13,8 @@
   justify-content: space-between;
 
   img {
-    width: $base-size * 23;
-    height: $base-size * 10;
+    width: 280px;
+    height: 120px;
     object-fit: cover;
     border-radius: 10px;
     z-index: 0;
@@ -31,15 +32,15 @@
   text-align: center;
 
   h1 {
-    color: $color-light;
-    font-size: $base-size * 2;
-    font-family: $font-header;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
     position: absolute;
     left: 25%;
     text-transform: uppercase;
     z-index: 3;
     pointer-events: none;
-    transition: $transition;       
+    transition: all .3s;       
   }
 
 }
@@ -58,15 +59,15 @@
 }
 
 .opening-hours {
-  background-color: $color-main;
+  background-color: #ff6b6b;
   border-radius: 5px;
   width: auto;
-  height: $base-size * 10;
-  color: $color-light;
+  height: 120px;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  font-family: $font-header;
+  font-family: 'Oswald', sans-serif;
 
   h2 {
     margin: 0;
@@ -76,12 +77,12 @@
 
 
 .main-carousel {
-  margin-top: $base-size * 9;
-  height: $base-size * 16;
+  margin-top: 105px;
+  height: 200px;
 }
 
 .carousel-cell {
-  padding: $base-size;
+  padding: 12px;
 }
 
 .box {
@@ -91,15 +92,15 @@
 
 .box-description {
   flex: 0 0 66%;
-  padding-left: $base-size * 2;
+  padding-left: 24px;
 
   h2{
-    font-family: $font-header;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
   }
 
   p{
-    font-family: $font-text;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -112,7 +113,7 @@
 }
 
 .gallery {
-  margin-top: $base-size * 9;
+  margin-top: 108px;
   display: inline-block;
   width: 100%;  
 }
@@ -134,8 +135,8 @@
   position: relative;
 
   img {
-    height: $base-size * 14;
-    width: $base-size * 14;
+    height: 170px;
+    width: 170px;
     object-fit: cover;
     z-index: 0;
     border-radius: 5px;
@@ -149,8 +150,8 @@
     z-index: 5;
 
     .icon {
-      color: $color-light;
-      font-size: $base-size;            
+      color: #fff;
+      font-size: 12px;            
     }   
   }  
 }
@@ -162,7 +163,7 @@
   }
 
   .icon:hover {
-    color: $color-main;
+    color: #ff6b6b;
   }
 }
 
@@ -170,15 +171,15 @@
   content: '';
   display: flex;
   position: absolute;
-  height: $base-size * 14;
-  width: $base-size * 14;
+  height: 170px;
+  width: 170px;
   opacity: 0.3;
   background: black;
   z-index: 3; 
 }  
 
 .instagram-link {
-  color: $color-main;
+  color: #ff6b6b;
 }
 
 @media (max-width: 768px) and (max-width: 991px){
